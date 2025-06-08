@@ -33,5 +33,11 @@ And in order to run it:
 ## Contributors
 
 - [**Tudor Ursescu**](https://github.com/Tudor-Ursescu)
+
 - [**Hryhorii Zakharchenko**](https://github.com/grysha11)
+
 - [**Tudor Lupu**](https://github.com/DRACULATudor)
+
+## License
+
+This project is for educational purposes as part of the 42 curriculum.
