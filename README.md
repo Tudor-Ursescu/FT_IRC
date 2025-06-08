@@ -32,6 +32,6 @@ And in order to run it:
 
 ## Contributors
 
-[**Tudor Ursescu**](https://github.com/Tudor-Ursescu)
-[**Hryhorii Zakharchenko**](https://github.com/grysha11)
-[**Tudor Lupu**](https://github.com/DRACULATudor)
+- [**Tudor Ursescu**](https://github.com/Tudor-Ursescu)
+- [**Hryhorii Zakharchenko**](https://github.com/grysha11)
+- [**Tudor Lupu**](https://github.com/DRACULATudor)
