@@ -16,6 +16,10 @@ class Client {
         bool _authorized;
         bool _nickFlag;
         bool _userFlag;
+        bool _invisible;
+        bool _welcomeMsg;
+        std::time_t _signOnTime;
+        std::time_t _lastActivityTime;
     public:
         //getters
         int getClientFd(void) const;
@@ -23,10 +27,14 @@ class Client {
         const std::string& getUsername(void) const;
         const std::string& getRealname(void) const;
         const std::string& getHostname(void) const;
-        const std::string& getSendBuf(void) const;
+        std::string& getSendBuf(void) ;
         bool getAuth(void) const;
         bool getNickFlag(void) const;
         bool getUserFlag(void) const;
+        bool getInvisible(void) const;
+        bool getWelcomeMsg(void) const;
+        std::time_t getSignOnTime(void) const;
+        std::time_t getIdleTime(void) const;
 
         //setters
         void setNickname(const std::string& nickname);
@@ -35,11 +43,15 @@ class Client {
         void setAuth(bool authorized);
         void setNickFlag(bool flag);
         void setUserFlag(bool flag);
+        void setInvisible(bool flag);
+        void setWelcomeMsg(bool flag);
+        void setSigOnTime(std::time_t signOnTime);
+        void setLastActivityTime(std::time_t lastActivityTime);
 
         Client(int client_fd, const std::string& hostname, Server* server);
         ~Client();
         //recv functions
-        void appendRecvData(const std::string& buf);
+        void appendRecvData(const char *buf, size_t len);
         std::string extractLineFromRecv();
         //send functions
         bool hasData() const;

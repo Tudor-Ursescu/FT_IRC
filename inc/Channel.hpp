@@ -18,7 +18,7 @@ class Server;
 class Channel
 {
 private:
-    Server* _server;
+    // Server* _server;
     std::string _name;
     std::string _topic;
     std::string _password;
@@ -37,6 +37,7 @@ public:
     const std::string &getName() const;
     const std::string &getTopic() const;
     size_t getUserLimit() const;
+    std::vector<Client*> getUsers() const;
     
     // Topic control
     void setTopic(const std::string &topic, const std::string &setter);
